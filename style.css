@@ -1,0 +1,256 @@
+:root {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.container {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 0.1fr 0.1fr 0.2fr 0.2fr 0.6fr 0.4fr; 
+  gap: 0.6em 0; 
+  width: 100vw;
+}
+.header-item {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+.isshin-png {
+  width: 100vw;
+}
+.article-ts {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  margin-inline: auto;
+  margin-block: auto;
+}
+.teaser-bleach {
+  text-decoration: none;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+  font-size: 2rem;
+  padding: 0.5rem 3rem;
+  color: white;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.teaser-bleach:hover {
+  opacity: 0.5;
+}
+.web-bl {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  margin-inline: auto;
+  margin-block: auto;
+}
+.website-bleach {
+  text-decoration: none;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+  font-size: 2rem;
+  padding: 0.5rem 3rem;
+  color: white;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.website-bleach:hover {
+  opacity: 0.5;
+}
+.main-items {
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+}
+.news-ar {
+  background-color: white;
+  transition: all 0.2s;
+}
+.new-item {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  transition: all 0.2s;
+}
+.news-ar:hover {
+  background-color: rgb(161, 3, 3);
+}
+.new-item:hover {
+  color: white;
+}
+.titekubo {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+}
+.author-bl {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  transition: all 0.2s;
+}
+.author-bl:hover {
+  color: white;
+}
+.kubo-item {
+  background-color: white;
+  transition: all 0.2s;
+}
+.kubo-item:hover {
+  background-color: rgb(161, 3, 3);
+}
+.bleach-png {
+  width: 100vw;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  transform: translateY(412%);
+}
+.brave-souls {
+  width: 100vw;
+}
+.game-png {
+  grid-row: 6 / 7;
+  grid-column: 1 / 2;
+}
+.about-game {
+  grid-row: 7 / 8;
+  grid-column: 1 / 2;
+  margin-inline: auto;
+}
+.bsgame {
+  text-decoration: none;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color: white;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: opacity 0.5s;
+}
+.bsgame:hover {
+  opacity: 0.5;
+}
+a {
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .teaser-bleach {
+    font-size: 3rem;
+  }
+  .website-bleach {
+      font-size: 3rem;
+  }
+  .new-item {
+    font-size: 3rem;
+  }
+  .author-bl {
+    font-size: 3rem;
+  }
+  .bsgame {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .teaser-bleach {
+    font-size: 4rem;
+  }
+  .website-bleach {
+    font-size: 4rem;
+  }
+  .new-item {
+    font-size: 4rem;
+  }
+  .author-bl {
+    font-size: 4rem;
+  }
+  .bsgame {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+     width: 100vw;
+     margin-inline: auto;
+     display: grid;  
+     grid-template-columns: 0.5fr 6fr 6fr 0.5fr; 
+     grid-template-rows: 2fr 0.3fr 0.3fr 0.5fr 1fr 0.5fr; 
+  }
+  .isshin-png {
+     width: 50vw;
+  }
+  .header-item {
+     grid-row: 1 / 2;
+     grid-column: 2 / 3;
+  }
+  .article-ts {
+     grid-column: 2 / 3;
+     grid-row: 2 / 3;
+  }
+  .bleach-png {
+     width: 50vw;
+     grid-column: 2 / 3;
+  }
+  .web-bl {
+     grid-row: 3 / 4;
+     grid-column: 2 / 3;
+  }
+  .main-items {
+     grid-row: 4 / 5;
+     grid-column: 2 / 3;
+  }
+  .titekubo {
+     grid-column: 2 / 3;
+  }
+  .game-png {
+    grid-row: 1 / 7;
+    grid-column: 3 / 4;
+    margin-inline: auto;
+    margin-block: auto;
+    border: 0.1rem white solid;
+    padding: 40vh 4rem
+  }
+  .brave-souls {
+    width: 30vw;
+  }
+  .about-game {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+    margin-inline: auto;
+  }
+  .bsgame {
+    font-size: 2.5rem;
+  }
+  .kubo-item {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 1350px) {
+  .kubo-item {
+    font-size: 10rem;
+  }
+  .bsgame {
+    font-size: 3.5rem;
+  }
+  .game-png {
+    padding: 50vh 4rem;
+  }
+}
+@media (min-width: 1775px) {
+  .kubo-item {
+    font-size: 12rem;
+  }
+  .bsgame {
+    font-size: 4rem;
+  }
+  .game-png {
+    padding: 62vh 4rem;
+  }
+  .new-item {
+    font-size: 6rem;
+  }
+  .container {
+    grid-template-rows: 2fr 0.2fr 0.2fr 0.5fr 0.8fr 0.5fr; 
+  }
+}
